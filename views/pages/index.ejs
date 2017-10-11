@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Bertina Zhai</h1>
+      <p class="lead text-muted">Welcome to my sample shopping website. I am actively looking for new jobs. Please contact me if 
+        you have a position for me. Thanks!
+      </p>
+    </div>
+  </section>
+
+  <div class="album text-muted">
+    <div class="container">
+
+      <div class="row">
+        <%  drinks.forEach(function(item){%>
+        <div class="product">
+          <img  alt="cocktail" style="height: 280px; width: 100%; display: block;" src="<%=item.img%>" data-holder-rendered="true">
+          <button type="button" class="btn btn-primary addBtn" value="<%= item.name%>">Add</button>
+          <button type="button" class="btn btn-secondary rmBtn " value="<%= item.name%>">Remove</button>
+          <p class="product-text"><%= item.name%></p>
+          <p class="product-text">&#36;<%= item.price%></p>
+        </div>
+        <% });%>
+    </div>
+  </div>
+  </div>
+
+<% include ../partials/footer.ejs%>
+  <script>
+
+    var lop = document.getElementsByClassName('product');	
+
+		for	(var i=0; i<lop.length;	i++){	
+			lop[i].addEventListener('mouseover', function (event) {
+				showOrHideRemoveButtoon(this);
+			});
+    }
+    $( ".addBtn" ).click(function() {
+      // alert($(this).val());
+      // console.log($(this).val);
+      addToCart($(this).val);
+  });
+  </script>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="356" height="280" viewBox="0 0 356 280" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="18" style="font-weight:bold;font-size:18pt;font-family:Arial, Helvetica, Open Sans, sans-serif">356x280</text></svg></body> -->
+</html>
+
