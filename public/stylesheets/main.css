@@ -1,0 +1,126 @@
+.jumbotron-heading
+{
+  color: #373536;
+}
+.jumbotron {
+  background: #532F8C;
+  color: white;
+  padding-bottom: 80px; }
+  .jumbotron .btn-primary {
+    background: #845ac7;
+    border-color: #845ac7; }
+    .jumbotron .btn-primary:hover {
+      background: #7646c1; }
+  .jumbotron p {
+    color: #d9ccee;
+    max-width: 75%;
+    margin: 1em auto 2em; }
+  .navbar + .jumbotron {
+    margin-top: -20px; }
+  .jumbotron .lang-logo {
+    display: block;
+    background: #B01302;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 2px solid white; }
+    .jumbotron .lang-logo img {
+      max-width: 100%; }
+.album
+{
+  min-height: 50rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+.product
+{
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.product-text
+{
+  font-size: 13px;
+  line-height: 19px ;
+  /* text-align: center ; */
+  display: inline;
+}
+.footer
+{
+  margin-top: 10px;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #292b2c !important;
+}
+
+.product button.addBtn{
+  display: none;
+}
+
+
+.product:hover button.addBtn{
+  display: block; 
+
+margin-left: 30px;
+position: absolute;
+width: 70px;
+height: 30px;
+
+top: 140px;
+
+}
+
+.product button.rmBtn{
+  display: none;
+}
+.product p
+{
+  display: inline-block;
+  /* vertical-align: top; */
+}
+.product:hover button.rmBtn{
+  display: block; 
+
+margin-left: 250px;
+position: absolute;
+width: 100px;
+height: 30px;
+
+top: 140px;
+
+}
+.button:hover{
+font-style: italic;
+font-size: 200%;
+}
+.blog-header
+{
+  margin-top: 50px;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+  border-bottom: .05rem solid #eee;
+}
+/* .navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.topnav
+{
+  display: inline-block;
+  float: none;
+} */
